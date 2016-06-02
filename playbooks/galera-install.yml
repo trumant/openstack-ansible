@@ -64,7 +64,7 @@
   user: root
   roles:
     - role: "pip_lock_down"
-      when: "(groups['repo_all'] | length) >= 1"
+      when: "(pip_links | length) >= 1"
     - { role: "galera_server", tags: [ "galera-server" ] }
     - role: "rsyslog_client"
       rsyslog_client_log_rotate_file: galera_log_rotate
