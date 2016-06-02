@@ -43,7 +43,7 @@
         - ssh-wait
   roles:
     - role: "pip_lock_down"
-      when: "(groups['repo_all'] | length) >= 1"
+      when: "(pip_links | length) >= 1"
     - role: "system_crontab_coordination"
       tags:
         - "system-crontab-coordination"
