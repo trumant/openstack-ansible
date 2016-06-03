@@ -71,8 +71,8 @@
       tags:
         - utility-logs
   roles:
-    - { role: "galera_client", tags: [ "utility-galera-client" ] }
     - { role: "pip_lock_down", tags: [ "utility-pip-lock-down" ] }
+    - { role: "galera_client", tags: [ "utility-galera-client" ] }
     - { role: "openstack_openrc", tags: [ "utility-openstack-openrc" ] }
   post_tasks:
     - name: Update apt sources
