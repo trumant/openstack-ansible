@@ -71,8 +71,7 @@
       tags:
         - utility-logs
   roles:
-    - role: "pip_lock_down"
-      when: "(groups['repo_all'] | length) >= 1"
+    - { role: "pip_lock_down", tags: [ "utility-pip-lock-down" ] }
     - { role: "galera_client", tags: [ "utility-galera-client" ] }
     - { role: "openstack_openrc", tags: [ "utility-openstack-openrc" ] }
   post_tasks:
