@@ -60,8 +60,8 @@ glance_git_dest: "/opt/glance_{{ glance_git_install_branch | replace('/', '_') }
 
 
 ## Heat service
-heat_git_repo: https://git.openstack.org/openstack/heat
-heat_git_install_branch: 0fa75da8248b6b3281e283dea895f4f09f60469a # HEAD of "stable/mitaka" as of 25.08.2016
+heat_git_repo: https://github.com/openstacknate/heat
+heat_git_install_branch: ae2a66368601f97166c366c7d537f08dfa34f105 # HEAD of "mitaka+dscp" as of 26.07.2016
 heat_git_dest: "/opt/heat_{{ heat_git_install_branch | replace('/', '_') }}"
 
 
@@ -83,8 +83,8 @@ keystone_git_dest: "/opt/keystone_{{ keystone_git_install_branch | replace('/', 
 
 
 ## Neutron service
-neutron_git_repo: https://git.openstack.org/openstack/neutron
-neutron_git_install_branch: 89d2e15ce34cd97201472b8bb39a131902dc9411 # HEAD of "stable/mitaka" as of 25.08.2016
+neutron_git_repo: https://github.com/openstacknate/neutron/
+neutron_git_install_branch: d72296c0ce87048df432e67dc14dd328db78d787 # HEAD of "mitaka+dscp" as of 26.07.2016
 neutron_git_dest: "/opt/neutron_{{ neutron_git_install_branch | replace('/', '_') }}"
 
 neutron_lbaas_git_repo: https://git.openstack.org/openstack/neutron-lbaas
